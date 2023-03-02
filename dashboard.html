@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Athena | Dashboard</title>
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css" />
+	<link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+	<div class="container-scroller">
+		<!--============= header start========================= -->
+		<header class="dashbord-header">
+			<div class="container-fluid">
+				<div class="row nav-wrapper">
+					<div class="col-12 col-sm-6 col-md-2">
+						<div class="logo">
+							<a href="dashboard.html">
+								<img src="assets/img/logo.svg" alt="logo">
+                            </a>
+                            <button id="smallscreen" class="navbar-toggler-right" type="button" data-toggle="offcanvas">
+                                <span class="mdi mdi-menu"></span>
+                            </button>
+                        </div>
+					</div>
+					<div class="col-12 col-sm-4 mobile-hide">
+						<div class="center-menu">
+							<ul class="course-menu">
+								<li><a href="courses.html">Courses</a></li>
+								<li><a href="group.html">Groups</a></li>
+								<li><a href="#">Resources</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-6">
+						<nav class="right-nav">
+							<ul class="right-index">
+								<li class="search-field">
+									<div class="search-btn">
+										<a href="#">
+											<i class="mdi mdi-magnify"></i>
+										</a>
+									</div>
+								</li>
+								<li class="nav-item">
+									<a href="#" id="calender">
+										<img src="assets/img/Calender Icon.svg" alt="">
+									</a>
+								</li>
+								<li class="nav-item dropdown">
+									<a id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+										<i class="mdi mdi-email"></i>
+									</a>
+									<div class="dropdown-menu msg-drop" aria-labelledby="messageDropdown">
+										<!-- <div class="msg-title">
+											<h6>Messages</h6>
+										</div> -->
+										<a href="#" class="msg-content">
+											<div class="thumbnail">
+												<img src="assets/img/faces/face1.jpg" alt="image" class="profile-pic">
+											</div>
+											<div class="msg-text">
+												<h6 class="msg-subject">Student Name</h6>
+												<p>Hello Sir, Can you please explain me one things ?</p>
+												<time class="time">1 Minutes ago </time>
+											</div>
+										</a>
+										<a href="#" class="msg-content">
+											<div class="thumbnail">
+												<img src="assets/img/faces/face2.jpg" alt="image" class="profile-pic">
+											</div>
+											<div class="msg-text">
+												<h6 class="msg-subject">Student Name</h6>
+												<p>Hello Sir, Can you please explain me one things ?</p>
+												<time class="time">5 min ago</time>
+											</div>
+										</a>
+										<a href="#" class="msg-content">
+											<div class="thumbnail">
+												<img src="assets/img/faces/face3.jpg" alt="image" class="profile-pic">
+											</div>
+											<div class="msg-text">
+												<h6 class="msg-subject">Student Name</h6>
+												<p>Hello Sir, Can you please explain me one things ?</p>
+												<time class="time">1 Minutes ago </time>
+											</div>
+										</a>
+
+										<div class="msg-unread-title">
+											<a href="#">View All</a>
+										</div>
+									</div>
+								</li>
+								<li class="nav-item dropdown">
+									<a id="notificationDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+										<img src="assets/img/Notification Icon.svg" alt="">
+									</a>
+									<div class="dropdown-menu notifi-drop" aria-labelledby="notificationDropdown">
+										<!-- <div class="msg-title">
+											<h6>Notifications</h6>
+										</div> -->
+										<a href="#" class="notifi-index">
+											<div class="thumbnail">
+												<div class="notifi-icon">
+													<img src="assets/img/faces/face1.jpg" alt="">
+												</div>
+											</div>
+											<div class="notifi-content">
+												<h6 class="title">Student Name</h6>
+												<p class="sub-title">Tristique a per a posuere a dignissim et vehicula hac varius.</p>
+												<span>5 min ago</span>
+											</div>
+										</a>
+
+										<a href="#" class="notifi-index">
+											<div class="thumbnail">
+												<div class="notifi-icon">
+													<img src="assets/img/faces/face2.jpg" alt="">
+												</div>
+											</div>
+											<div class="notifi-content">
+												<h6 class="title">Student Name</h6>
+												<p class="sub-title">Tristique a per a posuere a dignissim et vehicula hac varius.</p>
+												<span>5 min ago</span>
+											</div>
+										</a>
+										
+										<a href="#" class="notifi-index">
+											<div class="thumbnail">
+												<div class="notifi-icon">
+													<img src="assets/img/faces/face1.jpg" alt="">
+												</div>
+											</div>
+											<div class="notifi-content">
+												<h6 class="title">Student Name</h6>
+												<p class="sub-title">Tristique a per a posuere a dignissim et vehicula hac varius.</p>
+												<span>5 min ago</span>
+											</div>
+										</a>
+										<div class="msg-unread-title">
+											<a href="notification.html">View All</a>
+										</div>
+									</div>
+								</li>
+								<li class="nav-item nav-profile dropdown">
+									<a id="profileDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<div class="nav-profile-img">
+											<img src="assets/img/faces/face3.jpg" alt="image">
+											<span class="user-name">Alexa Martin</span>
+										</div>
+									</a>
+									<div class="dropdown-menu profile-menu" aria-labelledby="profileDropdown">
+                                        <a class="dropdown-item" href="profile.html">
+                                            <i class="mdi mdi-account mr-2"></i> MY PROFILE </a>
+                                          <a class="dropdown-item" href="signin.html">
+                                            <i class="mdi mdi-logout mr-2"></i> LOGOUT </a>
+									</div>
+								</li>
+								<button id="largescreen" class="navbar-toggler-right" type="button" data-toggle="offcanvas">
+									<span class="mdi mdi-menu"></span>
+								</button>
+
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- ============= header end ================ -->
+		<div class="container-fluid page-body-wrapper">
+			<!-- ============= sidebar start================== -->
+			<nav class="sidebar" id="sidebar">
+				<button class="navbar-toggler-close" type="button" data-toggle="offcanvas">
+					<span class="mdi mdi-close"></span>
+				</button>
+				<ul class="side-nav">
+					<li class="side-nav-item">
+						<a href="index.html">
+							<i class="mdi mdi-home menu-icon"></i>
+							<span class="menu-title">Home</span>
+						</a>
+					</li>
+					<li class="side-nav-item">
+						<a href="students.html">
+							<i class="mdi mdi-school menu-icon"></i>
+							<span class="menu-title">Students</span>
+						</a>
+					</li>
+					<li class="side-nav-item">
+						<a data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+							<i class="mdi mdi-file-find menu-icon"></i>
+							<span class="menu-title">Assessments</span>
+							<i class="menu-arrow"></i>
+						</a>
+						<div class="collapse" id="ui-basic">
+							<ul class="sub-menu">
+								<li> <a href="quiz.html">Quizzes</a></li>
+								<li> <a href="assignments.html">Assignments</a></li>
+								<li> <a href="exam.html">Exams</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="side-nav-item">
+						<a href="#">
+							<i class="mdi mdi-chart-areaspline menu-icon"></i>
+							<span class="menu-title">Reports</span>
+						</a>
+					</li>
+					<li class="side-nav-item">
+						<a data-toggle="collapse" href="#post" aria-expanded="false" aria-controls="post">
+							<i class="mdi mdi-calendar-check menu-icon"></i>
+							<span class="menu-title">Post</span>
+							<i class="menu-arrow"></i>
+						</a>
+						<div class="collapse" id="post">
+							<ul class="nav flex-column sub-menu">
+								<li> <a href="#">Buttons</a></li>
+								<li> <a href="#">Typography</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</nav>
+			<!-- =============main section================= -->
+			<div class="main-panel">
+				<div class="content-wrapper">
+					<section class="details-section">
+						<div class="row">
+							<div class="col-xl-3 col-lg-6 col-sm-6 grid-margin">
+								<div class="details-card">
+									<div class="details-body">
+										<div class="details-list">
+											<h4>Courses</h4>
+											<h2>10</h2>
+											<span class="label-a">New 2</span>
+										</div>
+										<img class="quizimg" src="assets/img/Course.svg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-6 col-sm-6 grid-margin">
+								<div class="details-card">
+									<div class="details-body">
+										<div class="details-list">
+											<h4>Students</h4>
+											<h2>45</h2>
+											<span class="label-b">New 5</span>
+										</div>
+										<img class="quizimg" src="assets/img/Students Icon.svg" alt="Students">
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-6 col-sm-6 grid-margin">
+								<div class="details-card">
+									<div class="details-body">
+										<div class="details-list">
+											<h4>Quiz</h4>
+											<h2>25</h2>
+											<span class="label-c">New 3</span>
+										</div>
+										<img class="quizimg" src="assets/img/Quiz.svg" alt="Quiz">
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-6 col-sm-6 grid-margin">
+								<div class="details-card">
+									<div class="details-body">
+										<div class="details-list">
+											<h4>Assignment</h4>
+											<h2>36</h2>
+											<span class="label-d">New 8</span>
+										</div>
+										<img class="quizimg" src="assets/img/Assignment.svg" alt="Assignment">
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="course-section">
+						<div class="dashboard">
+							<h3>Courses Dashboard</h3>
+							<ul class="dashboard-links">
+								<li><a type="button" data-toggle="modal" data-target="#addlession">Create New course</a></li>
+								<li><a href="#">View all</a></li>
+							</ul>
+						</div>
+						<div class="row">
+							<div class="col-md-4 stretch-card">
+								<div class="cource-index">
+									<div class="cource-img">
+										<img src="assets/img/Course 1.svg" alt="">
+									</div>
+									<div class="cource-content">
+										<p>Habitant primis inceptos etiam a cura bitur cubilia suspendisse.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 stretch-card">
+								<div class="cource-index">
+									<div class="cource-img">
+										<img src="assets/img/Course 1.svg" alt="">
+									</div>
+									<div class="cource-content">
+										<p>Habitant primis inceptos etiam a cura bitur cubilia suspendisse.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 stretch-card">
+								<div class="cource-index">
+									<div class="cource-img">
+										<img src="assets/img/Course 1.svg" alt="">
+									</div>
+									<div class="cource-content">
+										<p>Habitant primis inceptos etiam a cura bitur cubilia suspendisse.</p>
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+					</section>
+					<section class="students-section">
+						<div class="dashboard">
+							<h3>My Students</h3>
+							<ul class="dashboard-links">
+								<li><a href="#">View all</a></li>
+							</ul>
+						</div>
+						<div class="slidermain students-main">
+							<div class="students-slider slider">
+								<div class="item">
+									<div class="content">
+										<img src="assets/img/faces/face1.jpg">
+										<h5>Student Name</h5>
+									</div>
+								</div>
+								<div class="item">
+									<div class="content">
+										<img src="assets/img/faces/face2.jpg">
+										<h5>Student Name</h5>
+									</div>
+								</div>
+								<div class="item">
+									<div class="content">
+										<img src="assets/img/faces/face3.jpg">
+										<h5>Student Name</h5>
+									</div>
+								</div>
+								<div class="item">
+									<div class="content">
+										<img src="assets/img/faces/face1.jpg">
+										<h5>Student Name</h5>
+									</div>
+								</div>
+								<div class="item">
+									<div class="content">
+										<img src="assets/img/faces/face2.jpg">
+										<h5>Student Name</h5>
+									</div>
+								</div>
+								<div class="item">
+									<div class="content">
+										<img src="assets/img/faces/face1.jpg">
+										<h5>Student Name</h5>
+									</div>
+								</div>
+								<div class="item">
+									<div class="content">
+										<img src="assets/img/faces/face3.jpg">
+										<h5>Student Name</h5>
+									</div>
+								</div>
+								<div class="item">
+									<div class="content">
+										<img src="assets/img/faces/face1.jpg">
+										<h5>Student Name</h5>
+									</div>
+								</div>
+								<div class="item">
+									<div class="content">
+										<img src="assets/img/faces/face2.jpg">
+										<h5>Student Name</h5>
+									</div>
+								</div>
+								<div class="item">
+									<div class="content">
+										<img src="assets/img/faces/face3.jpg">
+										<h5>Student Name</h5>
+									</div>
+								</div>
+								<div class="item">
+									<div class="content">
+										<img src="assets/img/faces/face2.jpg">
+										<h5>Student Name</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section class="laest-quiz">
+						<div class="row">
+						  <div class="col-md-12 col-lg-6 grid-margin">
+							<div class="dashboard effit">
+								<h3>My Latest Quiz</h3>
+								<ul class="dashboard-links">
+									<li><a href="#">View all</a></li>
+								</ul>
+							</div>
+							<div class="card quiztag">
+							  <div class="card-body card-quiz">
+								  <p>1. Nam himenaeos mi quis feugiat nisi a sed</p>
+								  <div class="better">
+									<span>Good</span>5.5
+								  </div>
+							  </div>
+							</div>
+							<div class="card quiztag">
+							  <div class="card-body card-quiz">
+								  <p>2. Consectetur a a tellus vel at platea.</p>
+								  <div class="grate">
+									<span>Grate</span>8.3
+								  </div>
+							  </div>
+							</div>
+							<div class="card quiztag">
+							  <div class="card-body card-quiz">
+								  <p>3. A a nam a aliquet blandit commodo penatibus.</p>
+								  <div class="good">
+									<span>Good</span>2.3
+								  </div>
+							  </div>
+							</div>
+						  </div>
+		  
+						  <div class="col-md-12 col-lg-6">
+							<div class="dashboard effit">
+								<h3>Recent Assignment Sumbitted</h3>
+								<ul class="dashboard-links">
+									<li><a href="#">View all</a></li>
+								</ul>
+							</div>
+							<div class="card quiztag">
+							  <div class="card-body card-quiz">
+								  <p>1. Assignment subject name 1</p>
+								  <div class="studentimages">
+									<img src="assets/img/faces/face1.jpg" alt="">Student Name
+								  </div>
+							  </div>
+							</div>
+							<div class="card quiztag">
+							  <div class="card-body card-quiz">
+								  <p>2. Assignment subject name 2.</p>
+								  <div class="studentimages">
+									<img src="assets/img/faces/face1.jpg" alt="">Student Name
+								  </div>
+							  </div>
+							</div>
+							<div class="card quiztag">
+							  <div class="card-body card-quiz">
+								  <p>3. Assignment subject name 3</p>
+								  <div class="studentimages">
+									<img src="assets/img/faces/face1.jpg" alt="">Student Name
+								  </div>
+							  </div>
+							</div>
+						  </div>
+						</div>
+					</section>
+				</div>
+
+				<!-- The Lession Modal -->
+				<div class="modal assignment fade" id="addlession">
+					<div class="modal-dialog modal-dialog-centered modal-lg">
+						<div class="modal-content">
+							<!-- Modal Header -->
+							<div class="modal-header">
+							<h4 class="modal-title">Create Lesson</h4>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+					
+							<!-- Modal body -->
+							<div class="modal-body">
+								<form>
+									<div class="form-group">
+										<label for="name" class="col-form-label">Name :</label>
+										<input type="text" class="form-control" id="name">
+									</div>
+									<div class="form-group">
+										<label for="message-text" class="col-form-label">Description :</label>
+										<textarea class="form-control" id="message-text"></textarea>
+									</div>
+									
+									<div class="form-group">
+										<label for="access" class="col-form-label">Upload Files :</label>
+										<div class="file-upload">
+											<button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">
+												<div>
+													<img src="assets/img/Image Upload.svg" alt="">
+													Upload your files hERE
+												</div>
+											</button>
+											<div class="image-upload-wrap">
+											  <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+											</div>
+											<div class="file-upload-content">
+											  <div class="image-title-wrap">
+												<button type="button" onclick="removeUpload()" class="remove-image">&#10006; <span class="image-title">Uploaded Image</span></button>
+											  </div>
+											</div>
+										  </div>                                  
+									</div>
+								</form>
+								<!-- Modal footer -->
+								<div class="modal-footer">
+									<button type="button" class="btn btn-primary">Create</button>
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<!-- end Modal  -->
+
+			</div>
+		</div>
+
+		<!--========= main section end here ============== -->
+	</div>
+	<!-- page-body-wrapper ends -->
+	</div>
+	<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+	<script src="assets/js/popper.min.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="assets/js/slick.min.js" type="text/javascript"></script>
+	<script src="assets/js/main.js" type="text/javascript"></script>
+</body>
+
+</html>

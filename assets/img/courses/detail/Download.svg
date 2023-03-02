@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="53" height="53" viewBox="0 0 53 53">
+  <defs>
+    <clipPath id="clip-custom_1">
+      <rect width="53" height="53"/>
+    </clipPath>
+  </defs>
+  <g id="custom_1" data-name="custom – 1" clip-path="url(#clip-custom_1)">
+    <rect width="53" height="53" fill="#fff"/>
+    <g id="play-button">
+      <g id="Group_2943" data-name="Group 2943">
+        <g id="Group_2942" data-name="Group 2942">
+          <path id="Path_3477" data-name="Path 3477" d="M26.567,0A26.567,26.567,0,1,0,53.134,26.567,26.567,26.567,0,0,0,26.567,0Zm0,49.339A22.772,22.772,0,1,1,49.339,26.567,22.772,22.772,0,0,1,26.567,49.339Z" fill="#fff"/>
+        </g>
+      </g>
+      <g id="Group_2945" data-name="Group 2945" transform="translate(18.976 17.077)">
+        <g id="Group_2944" data-name="Group 2944">
+          <path id="Path_3478" data-name="Path 3478" d="M189.445,162.23a1.9,1.9,0,0,0-.852-.852l-15.181-7.591a1.9,1.9,0,0,0-2.746,1.7v15.181a1.9,1.9,0,0,0,2.746,1.7l15.181-7.591A1.9,1.9,0,0,0,189.445,162.23ZM174.461,167.6v-9.04l9.04,4.52Z" transform="translate(-170.666 -153.587)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Athena | Updates</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css" />
+    <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <div class="container-scroller">
+        <!--============= header start========================= -->
+        <header class="dashbord-header">
+			<div class="container-fluid">
+				<div class="row nav-wrapper">
+					<div class="col-12 col-sm-6 col-md-2">
+						<div class="logo">
+							<a href="dashboard.html">
+								<img src="assets/img/logo.svg" alt="logo">
+                            </a>
+                            <button id="smallscreen" class="navbar-toggler-right" type="button" data-toggle="offcanvas">
+                                <span class="mdi mdi-menu"></span>
+                            </button>
+                        </div>
+					</div>
+					<div class="col-12 col-sm-4 mobile-hide">
+						<div class="center-menu">
+							<ul class="course-menu">
+								<li><a href="courses.html">Courses</a></li>
+								<li><a href="group.html">Groups</a></li>
+								<li><a href="#">Resources</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-6">
+						<nav class="right-nav">
+							<ul class="right-index">
+								<li class="search-field">
+									<div class="search-btn">
+										<a href="#">
+											<i class="mdi mdi-magnify"></i>
+										</a>
+									</div>
+								</li>
+								<li class="nav-item">
+									<a href="#" id="calender">
+										<img src="assets/img/Calender Icon.svg" alt="">
+									</a>
+								</li>
+								<li class="nav-item dropdown">
+									<a id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+										<i class="mdi mdi-email"></i>
+									</a>
+									<div class="dropdown-menu msg-drop" aria-labelledby="messageDropdown">
+										<!-- <div class="msg-title">
+											<h6>Messages</h6>
+										</div> -->
+										<a href="#" class="msg-content">
+											<div class="thumbnail">
+												<img src="assets/img/faces/face1.jpg" alt="image" class="profile-pic">
+											</div>
+											<div class="msg-text">
+												<h6 class="msg-subject">Student Name</h6>
+												<p>Hello Sir, Can you please explain me one things ?</p>
+												<time class="time">1 Minutes ago </time>
+											</div>
+										</a>
+										<a href="#" class="msg-content">
+											<div class="thumbnail">
+												<img src="assets/img/faces/face2.jpg" alt="image" class="profile-pic">
+											</div>
+											<div class="msg-text">
+												<h6 class="msg-subject">Student Name</h6>
+												<p>Hello Sir, Can you please explain me one things ?</p>
+												<time class="time">5 min ago</time>
+											</div>
+										</a>
+										<a href="#" class="msg-content">
+											<div class="thumbnail">
+												<img src="assets/img/faces/face3.jpg" alt="image" class="profile-pic">
+											</div>
+											<div class="msg-text">
+												<h6 class="msg-subject">Student Name</h6>
+												<p>Hello Sir, Can you please explain me one things ?</p>
+												<time class="time">1 Minutes ago </time>
+											</div>
+										</a>
+
+										<div class="msg-unread-title">
+											<a href="#">View All</a>
+										</div>
+									</div>
+								</li>
+								<li class="nav-item dropdown">
+									<a id="notificationDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+										<img src="assets/img/Notification Icon.svg" alt="">
+									</a>
+									<div class="dropdown-menu notifi-drop" aria-labelledby="notificationDropdown">
+										<!-- <div class="msg-title">
+											<h6>Notifications</h6>
+										</div> -->
+										<a href="#" class="notifi-index">
+											<div class="thumbnail">
+												<div class="notifi-icon">
+													<img src="assets/img/faces/face1.jpg" alt="">
+												</div>
+											</div>
+											<div class="notifi-content">
+												<h6 class="title">Student Name</h6>
+												<p class="sub-title">Tristique a per a posuere a dignissim et vehicula hac varius.</p>
+												<span>5 min ago</span>
+											</div>
+										</a>
+
+										<a href="#" class="notifi-index">
+											<div class="thumbnail">
+												<div class="notifi-icon">
+													<img src="assets/img/faces/face2.jpg" alt="">
+												</div>
+											</div>
+											<div class="notifi-content">
+												<h6 class="title">Student Name</h6>
+												<p class="sub-title">Tristique a per a posuere a dignissim et vehicula hac varius.</p>
+												<span>5 min ago</span>
+											</div>
+										</a>
+										
+										<a href="#" class="notifi-index">
+											<div class="thumbnail">
+												<div class="notifi-icon">
+													<img src="assets/img/faces/face1.jpg" alt="">
+												</div>
+											</div>
+											<div class="notifi-content">
+												<h6 class="title">Student Name</h6>
+												<p class="sub-title">Tristique a per a posuere a dignissim et vehicula hac varius.</p>
+												<span>5 min ago</span>
+											</div>
+										</a>
+										<div class="msg-unread-title">
+											<a href="notification.html">View All</a>
+										</div>
+									</div>
+								</li>
+								<li class="nav-item nav-profile dropdown">
+									<a id="profileDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<div class="nav-profile-img">
+											<img src="assets/img/faces/face3.jpg" alt="image">
+											<span class="user-name">Alexa Martin</span>
+										</div>
+									</a>
+									<div class="dropdown-menu profile-menu" aria-labelledby="profileDropdown">
+                                        <a class="dropdown-item" href="profile.html">
+                                            <i class="mdi mdi-account mr-2"></i> MY PROFILE </a>
+                                          <a class="dropdown-item" href="signin.html">
+                                            <i class="mdi mdi-logout mr-2"></i> LOGOUT </a>
+									</div>
+								</li>
+								<button id="largescreen" class="navbar-toggler-right" type="button" data-toggle="offcanvas">
+									<span class="mdi mdi-menu"></span>
+								</button>
+
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+        <!-- ============= header end ================ -->
+        <div class="container-fluid page-body-wrapper">
+            <!-- ============= sidebar start================== -->
+            <nav class="sidebar" id="sidebar">
+				<button class="navbar-toggler-close" type="button" data-toggle="offcanvas">
+					<span class="mdi mdi-close"></span>
+				</button>
+				<ul class="side-nav">
+					<li class="side-nav-item">
+						<a href="course_detail.html">
+							<i class="mdi mdi-note menu-icon"></i>
+							<span class="menu-title">Materials</span>
+						</a>
+					</li>
+					<li class="side-nav-item">
+						<a href="updates.html">
+							<i class="mdi mdi-update menu-icon"></i>
+							<span class="menu-title">Updates</span>
+						</a>
+                    </li>
+                    <li class="side-nav-item">
+						<a href="gradebook.html">
+							<i class="mdi mdi-file-find menu-icon"></i>
+							<span class="menu-title">Gradebook</span>
+						</a>
+					</li>
+					<li class="side-nav-item">
+						<a href="#">
+							<i class="mdi mdi-file-document menu-icon"></i>
+							<span class="menu-title">Grade Setup</span>
+						</a>
+					</li>
+					<li class="side-nav-item">
+						<a href="#">
+							<i class="mdi mdi-certificate menu-icon"></i>
+							<span class="menu-title">Badges</span>
+						</a>
+					</li>
+					<li class="side-nav-item">
+						<a href="attendance.html">
+							<i class="mdi mdi-file-check menu-icon"></i>
+							<span class="menu-title">Attendance</span>
+						</a>
+                    </li>
+                    <li class="side-nav-item">
+						<a href="members.html">
+							<i class="mdi mdi-account-multiple-outline menu-icon"></i>
+							<span class="menu-title">Members</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+            <!-- =============main section================= -->
+            <div class="main-panel">
+                <div class="content-wrapper">
+
+                    <section class="coursedetail">
+                        <div class="user-name">
+                            <div class="detail-img">
+                                <img src="assets/img/courses/Course_detail.png" alt="">
+                            </div>
+                            <div class="usersdetail">
+                                <h4>2A Statistic A Sec:3</h4>
+                                <p>School Name</p>
+                            </div>
+                        </div>
+                        <div class="cours--details updates">
+                            <div class="row">
+                                <div class="col-md-8 flex-event">
+                                    <div class="materials">
+                                        <div class="all--mate">
+                                            <p>All Materials</p>
+                                            <div class="drop-details">
+                                                <div class="dropdown primary1">
+                                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownact" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Add Materials</a>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownact">
+                                                        <a class="dropdown-item" type="button" data-toggle="modal" data-target="#myModal"><i class="mdi mdi-book-open-variant"></i> Add Assignments</a>
+                                                        <a class="dropdown-item" type="button" data-toggle="modal" data-target="#myquiz"><i class="mdi mdi-comment-question-outline"></i> Add test/Quiz</a>
+														<a class="dropdown-item" type="button" data-toggle="modal" data-target="#myAssessment"><i class="mdi mdi-file"></i> Add Assesments</a>
+                                                        <a class="dropdown-item" type="button" data-toggle="modal" data-target="#myFile"><i class="mdi mdi-library-books"></i> Add File/Link/External Tool</a>
+                                                        <a class="dropdown-item" type="button" data-toggle="modal" data-target="#myDiscussion"><i class="mdi mdi-comment-processing-outline"></i> Add discussion</a>
+                                                        <a class="dropdown-item" href="#"><i class="mdi mdi-file-document"></i> Add page</a>
+                                                        <a class="dropdown-item" href="#"><i class="mdi mdi-file-outline"></i> Add media album</a>
+														<a class="dropdown-item" href="#"><i class="mdi mdi-playlist-plus"></i> Add package</a>
+														<div class="divider"></div>
+                                                        <a class="dropdown-item" href="#"><i class="mdi mdi-format-list-checks"></i> Import from resources</a>
+                                                        <a class="dropdown-item" href="#"><i class="mdi mdi-search-web"></i> find resources</a>
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown primary2">
+                                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Options</a>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                                                        <a class="dropdown-item" href="#">Action</a>
+                                                        <a class="dropdown-item" href="#">Another action</a>
+                                                        <a class="dropdown-item" href="#">Something else here</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <form>
+                                            <div class="form-group">
+                                                <textarea rows="4"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <input class="btn btn-primary" type="submit" value="POST">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 flex-event">
+                                    <div class="material_event">
+                                        <div class="event-header">
+                                            <p><i class="mdi mdi-calendar"></i> Events</p>
+                                            <a href="#">Create</a>
+                                        </div>
+                                        <div class="event-body">
+                                            <p>No upcoming events or assignments</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+					</section>
+					<!-- The Assessment Modal -->
+					<div class="modal assignment fade" id="myDiscussion">
+						<div class="modal-dialog modal-dialog-centered modal-lg">
+							<div class="modal-content">
+								<!-- Modal Header -->
+								<div class="modal-header">
+									<h4 class="modal-title">Create Discussion</h4>
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+								</div>
+								<!-- Modal body -->
+								<div class="modal-body">
+									<form>
+										<div class="form-group">
+											<label for="name" class="col-form-label">Name :</label>
+											<input type="text" class="form-control" id="name">
+										</div>
+										<div class="form-group">
+											<label for="message-text" class="col-form-label">Description :</label>
+											<textarea class="form-control" id="message-text"></textarea>
+										</div>
+										<div class="form-group">
+											<label for="date" class="col-form-label">Due Date :</label>
+											<div class="duedate">
+												<select name="date" id="date">
+													<option value="date">MM/DD/YYY</option>
+													<option value="school1">20/9/2020</option>
+													<option value="school2">21/8/2021</option>
+													<option value="school3">05/5/2021</option>
+												</select>
+												<select name="date" id="date">
+													<option value="date">10:59 PM</option>
+													<option value="school1">05:20 PM</option>
+													<option value="school2">08:10 AM</option>
+													<option value="school3">09:45 PM</option>
+												</select>
+												<div class="select--text">
+													<input type="number" class="form-control" placeholder="100">
+													<span class="mute">Points</span>
+												</div>
+											</div>
+										</div>
+										
+										<div class="form-group inputcheck">
+											<label for="privacy" class="col-form-label">Grading :</label>
+											<div class="redio-obj">
+												<input type="checkbox" name="grade"><span class="finalcheck">Enable Grading</span>
+											</div>
+										</div>
+										<div class="form-group inputcheck">
+											<label for="category" class="col-form-label">Learning objective :</label>
+											<div class="redio-obj">
+												<div class="radiolrn">
+													<input type="radio" checked><span class="finalcheck">Align</span>
+												</div>
+											</div>
+										</div>
+									</form>
+									<!-- Modal footer -->
+									<div class="modal-footer">
+										<button type="button" class="btn btn-primary">Create</button>
+										<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<!-- end Modal  -->
+
+					<!-- The File Modal -->
+					<div class="modal assignment fade" id="myFile">
+						<div class="modal-dialog modal-dialog-centered modal-lg">
+							<div class="modal-content">
+								<!-- Modal Header -->
+								<div class="modal-header">
+									<h4 class="modal-title">Add File / Link</h4>
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+								</div>
+								<!-- Modal body -->
+								<div class="modal-body">
+									<div class="file-link">
+										<div class="row">
+											<div class="col-md-4">
+												<div class="linkbg">
+													<a href="#">
+														<img src="assets/img/courses/File.png" alt="">File
+													</a>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="linkbg">
+													<a href="#">
+														<img src="assets/img/courses/link.png" alt="">Link
+													</a>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="linkbg">
+													<a href="#">
+														<img src="assets/img/courses/tool.png" alt="">External Tool
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<!-- end Modal  -->
+
+					<!-- The Assessment Modal -->
+					<div class="modal assignment fade" id="myAssessment">
+						<div class="modal-dialog modal-dialog-centered modal-lg">
+							<div class="modal-content">
+								<!-- Modal Header -->
+								<div class="modal-header">
+									<h4 class="modal-title">Add Assessment</h4>
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+								</div>
+								<!-- Modal body -->
+								<div class="modal-body">
+									<form>
+										<div class="form-group">
+											<label for="name" class="col-form-label">Name :</label>
+											<input type="text" class="form-control" id="name">
+										</div>
+										<div class="form-group">
+											<label for="date" class="col-form-label">Due Date :</label>
+											<div class="duedate">
+												<select name="date" id="date">
+													<option value="date">MM/DD/YYY</option>
+													<option value="school1">20/9/2020</option>
+													<option value="school2">21/8/2021</option>
+													<option value="school3">05/5/2021</option>
+												</select>
+												<select name="date" id="date">
+													<option value="date">10:59 PM</option>
+													<option value="school1">05:20 PM</option>
+													<option value="school2">08:10 AM</option>
+													<option value="school3">09:45 PM</option>
+												</select>
+												<div class="select--text">
+													<input type="number" class="form-control" placeholder="100">
+													<span class="mute">Points</span>
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="submission" class="col-form-label">Submission :</label>
+											<div class="factor">
+												<select name="submission" id="submission">
+													<option value="enable">Enable</option>
+													<option value="disable">Disable</option>
+												</select>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="password" class="col-form-label">Password :</label>
+											<div class="factor select--text">
+												<select name="password" id="password">
+													<option value="enable">Enable</option>
+													<option value="disable">Disable</option>
+												</select>
+												<input type="text" class="form-control" id="pwd" placeholder="Enter Password">
+												<span class="mute">Note : 5-15 character, numeric and special character</span>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="privacy" class="col-form-label">Category :</label>
+											<div class="factor">
+												<select name="privacy" id="privacy">
+													<option value="category">Select a category</option>
+													<option value="school1">School1</option>
+													<option value="school2">School2</option>
+													<option value="school3">School3</option>
+												</select>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="category" class="col-form-label">Period :</label>
+											<div class="factor">
+												<select name="category" id="category">
+													<option value="category">No Grading Period</option>
+													<option value="school1">School1</option>
+													<option value="school2">School2</option>
+													<option value="school3">School3</option>
+												</select>    
+												<input type="checkbox" name="" id=""><span class="finalcheck">Set as Final</span>
+											</div>
+										</div>
+									</form>
+									<!-- Modal footer -->
+									<div class="modal-footer">
+										<button type="button" class="btn btn-primary">Create</button>
+										<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<!-- end Modal  -->
+
+					<!-- The Quiz Modal -->
+					<div class="modal assignment fade" id="myquiz">
+						<div class="modal-dialog modal-dialog-centered modal-lg">
+							<div class="modal-content">
+								<!-- Modal Header -->
+								<div class="modal-header">
+									<h4 class="modal-title">Create Quiz</h4>
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+								</div>
+								<!-- Modal body -->
+								<div class="modal-body">
+									<form>
+										<div class="form-group">
+											<label for="name" class="col-form-label">Name :</label>
+											<input type="text" class="form-control" id="name">
+										</div>
+										<div class="form-group">
+											<label for="privacy" class="col-form-label">Category :</label>
+											<div class="factor">
+												<select name="privacy" id="privacy">
+													<option value="category">Select a category</option>
+													<option value="school1">School1</option>
+													<option value="school2">School2</option>
+													<option value="school3">School3</option>
+												</select>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="category" class="col-form-label">Period :</label>
+											<div class="factor">
+												<select name="category" id="category">
+													<option value="category">Select a category</option>
+													<option value="school1">School1</option>
+													<option value="school2">School2</option>
+													<option value="school3">School3</option>
+												</select>    
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="factor" class="col-form-label">Factor :</label>
+											<div class="factor">
+												<input type="number" class="form-control" id="factor">
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="category" class="col-form-label">Period :</label>
+											<div class="factor">
+												<select name="category" id="category">
+													<option value="numeric">Numeric</option>
+													<option value="school1">School1</option>
+													<option value="school2">School2</option>
+													<option value="school3">School3</option>
+												</select>    
+											</div>
+										</div>
+									</form>
+									<!-- Modal footer -->
+									<div class="modal-footer">
+										<button type="button" class="btn btn-primary">Create</button>
+										<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<!-- end Modal  -->
+
+					<!-- The Assignment Modal -->
+					<div class="modal assignment fade" id="myModal">
+						<div class="modal-dialog modal-dialog-centered modal-lg">
+							<div class="modal-content">
+								<!-- Modal Header -->
+								<div class="modal-header">
+								<h4 class="modal-title">Create Assignment</h4>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								</div>
+						
+								<!-- Modal body -->
+								<div class="modal-body">
+									<form>
+										<div class="form-group">
+											<label for="name" class="col-form-label">Name :</label>
+											<input type="text" class="form-control" id="name">
+										</div>
+										<div class="form-group">
+											<label for="message-text" class="col-form-label">Description :</label>
+											<textarea class="form-control" id="message-text"></textarea>
+										</div>
+										<div class="form-group">
+											<label for="date" class="col-form-label">Due Date :</label>
+											<div class="duedate">
+												<select name="date" id="date">
+													<option value="date">MM/DD/YYY</option>
+													<option value="school1">20/9/2020</option>
+													<option value="school2">21/8/2021</option>
+													<option value="school3">05/5/2021</option>
+												</select>
+												<select name="date" id="date">
+													<option value="date">10:59 PM</option>
+													<option value="school1">05:20 PM</option>
+													<option value="school2">08:10 AM</option>
+													<option value="school3">09:45 PM</option>
+												</select>
+												<div class="select--text">
+													<input type="number" class="form-control" placeholder="100">
+													<span class="mute">Points</span>
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="privacy" class="col-form-label">Privacy :</label>
+											<div class="factor">
+												<select name="privacy" id="privacy">
+													<option value="category">Select a category</option>
+													<option value="school1">School1</option>
+													<option value="school2">School2</option>
+													<option value="school3">School3</option>
+												</select>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="category" class="col-form-label">Period :</label>
+											<div class="factor">
+												<select name="category" id="category">
+													<option value="category">Select a category</option>
+													<option value="school1">School1</option>
+													<option value="school2">School2</option>
+													<option value="school3">School3</option>
+												</select>    
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="factor" class="col-form-label">Factor :</label>
+											<div class="factor">
+												<input type="number" class="form-control" id="factor">
+											</div>
+										</div>
+									</form>
+									<!-- Modal footer -->
+									<div class="modal-footer">
+										<button type="button" class="btn btn-primary">Create</button>
+										<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<!-- end Modal  -->
+                </div>
+            </div>
+            
+            <!--========= main section end here ============== -->
+        </div>
+        <!-- page-body-wrapper ends -->
+    </div>
+    <script src="assets/js/jquery.min.js" type="text/javascript"></script>
+	<script src="assets/js/popper.min.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="assets/js/slick.min.js" type="text/javascript"></script>
+	<script src="assets/js/main.js" type="text/javascript"></script>
+</body>
+</html>

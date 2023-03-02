@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Athena | Student Dashboard</title>
+	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/slick-theme.css" />
+	<link rel="stylesheet" href="../assets/css/materialdesignicons.min.css">
+	<link rel="stylesheet" href="../assets/css/style.css">
+	<link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+
+<body>
+	<div class="container-scroller">
+		<!--============= header start========================= -->
+		<header class="dashbord-header">
+			<div class="container-fluid">
+				<div class="row nav-wrapper">
+					<div class="col-12 col-sm-6 col-md-2">
+						<div class="logo">
+							<a href="../dashboard.html">
+								<img src="../assets/img/logo.svg" alt="logo">
+                            </a>
+                            <button id="smallscreen" class="navbar-toggler-right" type="button" data-toggle="offcanvas">
+                                <span class="mdi mdi-menu"></span>
+                            </button>
+                        </div>
+					</div>
+					<div class="col-12 col-sm-4 mobile-hide">
+						<div class="center-menu">
+							<ul class="course-menu">
+								<li><a href="courses.html">Courses</a></li>
+								<li class="active"><a href="#">Groups</a></li>
+                                <li><a href="#">Resources</a></li>
+                                <li class="dropdown">
+									<a id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+										Grades
+									</a>
+									<div class="dropdown-menu msg-grade" aria-labelledby="messageDropdown">
+                                        <a href="#">Grade Report</a>
+                                        <a href="#">Attendance</a>
+									</div>
+                                </li>							
+                            </ul>
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-6">
+						<nav class="right-nav">
+							<ul class="right-index">
+								<li class="search-field">
+									<div class="search-btn">
+										<a href="#">
+											<i class="mdi mdi-magnify"></i>
+										</a>
+									</div>
+								</li>
+								<li class="nav-item">
+									<a href="#" id="calender">
+										<img src="../assets/img/Calender Icon.svg" alt="">
+									</a>
+								</li>
+								<li class="nav-item dropdown">
+									<a id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+										<i class="mdi mdi-email"></i>
+									</a>
+									<div class="dropdown-menu msg-drop" aria-labelledby="messageDropdown">
+										<!-- <div class="msg-title">
+											<h6>Messages</h6>
+										</div> -->
+										<a href="#" class="msg-content">
+											<div class="thumbnail">
+												<img src="../assets/img/faces/face1.jpg" alt="image" class="profile-pic">
+											</div>
+											<div class="msg-text">
+												<h6 class="msg-subject">Student Name</h6>
+												<p>Hello Sir, Can you please explain me one things ?</p>
+												<time class="time">1 Minutes ago </time>
+											</div>
+										</a>
+										<a href="#" class="msg-content">
+											<div class="thumbnail">
+												<img src="../assets/img/faces/face2.jpg" alt="image" class="profile-pic">
+											</div>
+											<div class="msg-text">
+												<h6 class="msg-subject">Student Name</h6>
+												<p>Hello Sir, Can you please explain me one things ?</p>
+												<time class="time">5 min ago</time>
+											</div>
+										</a>
+										<a href="#" class="msg-content">
+											<div class="thumbnail">
+												<img src="../assets/img/faces/face3.jpg" alt="image" class="profile-pic">
+											</div>
+											<div class="msg-text">
+												<h6 class="msg-subject">Student Name</h6>
+												<p>Hello Sir, Can you please explain me one things ?</p>
+												<time class="time">1 Minutes ago </time>
+											</div>
+										</a>
+
+										<div class="msg-unread-title">
+											<a href="#">View All</a>
+										</div>
+									</div>
+								</li>
+								<li class="nav-item dropdown">
+									<a id="notificationDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+										<img src="../assets/img/Notification Icon.svg" alt="">
+									</a>
+									<div class="dropdown-menu notifi-drop" aria-labelledby="notificationDropdown">
+										<!-- <div class="msg-title">
+											<h6>Notifications</h6>
+										</div> -->
+										<a href="#" class="notifi-index">
+											<div class="thumbnail">
+												<div class="notifi-icon">
+													<img src="../assets/img/faces/face1.jpg" alt="">
+												</div>
+											</div>
+											<div class="notifi-content">
+												<h6 class="title">Student Name</h6>
+												<p class="sub-title">Tristique a per a posuere a dignissim et vehicula hac varius.</p>
+												<span>5 min ago</span>
+											</div>
+										</a>
+
+										<a href="#" class="notifi-index">
+											<div class="thumbnail">
+												<div class="notifi-icon">
+													<img src="../assets/img/faces/face2.jpg" alt="">
+												</div>
+											</div>
+											<div class="notifi-content">
+												<h6 class="title">Student Name</h6>
+												<p class="sub-title">Tristique a per a posuere a dignissim et vehicula hac varius.</p>
+												<span>5 min ago</span>
+											</div>
+										</a>
+										
+										<a href="#" class="notifi-index">
+											<div class="thumbnail">
+												<div class="notifi-icon">
+													<img src="../assets/img/faces/face1.jpg" alt="">
+												</div>
+											</div>
+											<div class="notifi-content">
+												<h6 class="title">Student Name</h6>
+												<p class="sub-title">Tristique a per a posuere a dignissim et vehicula hac varius.</p>
+												<span>5 min ago</span>
+											</div>
+										</a>
+										<div class="msg-unread-title">
+											<a href="../notification.html">View All</a>
+										</div>
+									</div>
+								</li>
+								<li class="nav-item nav-profile dropdown">
+									<a id="profileDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<div class="nav-profile-img">
+											<img src="../assets/img/faces/face3.jpg" alt="image">
+											<span class="user-name">Alexa Martin</span>
+										</div>
+									</a>
+									<div class="dropdown-menu profile-menu" aria-labelledby="profileDropdown">
+                                        <a class="dropdown-item" href="../profile.html">
+                                            <i class="mdi mdi-account mr-2"></i> MY PROFILE </a>
+                                          <a class="dropdown-item" href="../signin.html">
+                                            <i class="mdi mdi-logout mr-2"></i> LOGOUT </a>
+									</div>
+								</li>
+								<button id="largescreen" class="navbar-toggler-right" type="button" data-toggle="offcanvas">
+									<span class="mdi mdi-menu"></span>
+								</button>
+
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- ============= header end ================ -->
+		<div class="container-fluid page-body-wrapper">
+			<!-- ============= sidebar start================== -->
+			<nav class="sidebar" id="sidebar">
+				<button class="navbar-toggler-close" type="button" data-toggle="offcanvas">
+					<span class="mdi mdi-close"></span>
+				</button>
+				<ul class="side-nav">
+					<li class="side-nav-item">
+						<a href="student_dashboard.html">
+							<i class="mdi mdi-home menu-icon"></i>
+							<span class="menu-title">Home</span>
+						</a>
+					</li>
+					<li class="side-nav-item">
+						<a href="instructor.html">
+							<i class="mdi mdi-account-star menu-icon"></i>
+							<span class="menu-title">Instructors</span>
+						</a>
+					</li>
+					<li class="side-nav-item">
+						<a data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+							<i class="mdi mdi-file-find menu-icon"></i>
+							<span class="menu-title">Assessments</span>
+							<i class="menu-arrow"></i>
+						</a>
+						<div class="collapse" id="ui-basic">
+							<ul class="sub-menu">
+								<li> <a href="quiz.html">Quizzes</a></li>
+								<li> <a href="assignments.html">Assignments</a></li>
+								<li> <a href="exam.html">Exams</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="side-nav-item">
+						<a href="certificate.html">
+							<i class="mdi mdi-certificate menu-icon"></i>
+							<span class="menu-title">Certificates</span>
+						</a>
+                    </li>
+                    <li class="side-nav-item">
+						<a href="#">
+							<i class="mdi mdi-chart-areaspline menu-icon"></i>
+							<span class="menu-title">Reports</span>
+						</a>
+					</li>
+					<li class="side-nav-item">
+						<a data-toggle="collapse" href="#post" aria-expanded="false" aria-controls="post">
+							<i class="mdi mdi-calendar-check menu-icon"></i>
+							<span class="menu-title">Post</span>
+							<i class="menu-arrow"></i>
+						</a>
+						<div class="collapse" id="post">
+							<ul class="nav flex-column sub-menu">
+								<li> <a href="post.html">Updates</a></li>
+								<li> <a href="event.html">Event</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</nav>
+			<!-- =============main section================= -->
+			<div class="main-panel">
+				<div class="content-wrapper">
+                    <div class="breadcumb">
+                        <ul>
+                            <li><a href="#"><span class="mdi mdi-home"></span>Home</a></li>
+                            <li><a href="#">Groups</a></li>
+                        </ul>
+                    </div>
+                    <section class="coursedetail">
+                        <div class="cours--details">
+                            <div class="row row-eq-height">
+                                <div class="col-md-8 flex-event">
+                                    <div class="update-group">
+                                        <div class="mate--details22">
+                                            <div class="editimg_team">
+                                                <img src="../assets/img/faces/face1.jpg" alt="">
+                                                <div class="name--mater">
+                                                    <h5>Statistics Team</h5>
+                                                    <p>Australian School of Abu Dhabi | 21 Members</p>
+                                                    <div class="multi--img">
+                                                        <img src="../assets/img/faces/face1.jpg" alt="">
+                                                        <img src="../assets/img/faces/face2.jpg" alt="">
+                                                        <img src="../assets/img/faces/face3.jpg" alt="">
+                                                        <img src="../assets/img/faces/face4.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="edit--selection">
+                                                <i class="mdi mdi-settings"></i>
+                                            </div>
+                                        </div>
+                                        <!-- tabination -->
+                                        <div class="group__updates">
+                                            <ul class="nav nav-tabs">
+                                                <li class="active"><a data-toggle="tab" href="#home">Updates</a></li>
+                                                <li><a data-toggle="tab" href="#menu1">Discussions</a></li>
+                                                <li><a data-toggle="tab" href="#album">Album</a></li>
+                                                <li><a data-toggle="tab" href="#members">members</a></li>
+                                                <li><a data-toggle="tab" href="#resources">Resources</a></li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                <div id="home" class="tab-pane fade in active">
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <textarea rows="4"></textarea>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input class="btn btn-primary" type="submit" value="POST">
+                                                        </div>
+                                                    </form>
+                                                    <!-- video -->
+                                                    <div class="updat-dtlgrp">
+                                                        <div class="editimg_team">
+                                                            <img src="../assets/img/faces/face1.jpg" alt="">
+                                                            <div class="video-txt">
+                                                                <h6>Hossam Hammad</h6>
+                                                                <p>Please check the video at the link below in preparation for our class on Monday</p>
+                                                                <div class="videomain">
+                                                                    <video src=""></video>
+                                                                    <div class="vdo_desc">
+                                                                        <h5>Using right triangle ratios</h5>
+                                                                        <p>Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.</p>
+                                                                    </div>
+                                                                </div>
+                                                                <p>Sunday May 10, 2020 at 9:52 pm · <a href="#">Comment</a> · <a href="#">Like</a></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="edit--selection">
+                                                            <i class="mdi mdi-settings"></i>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div id="menu1" class="tab-pane fade">
+													<div class="discussion-list">
+														<div class="discussion">
+															<div class="editimg_team">
+																<img src="../assets/img/faces/face1.jpg" alt="">
+																<div class="disc__team">
+																	<h5>Discussion Topic 1</h5>
+																	<p>2 Comments · Created by Hossam Hammad Wed May 13, 2020 at 9:20 pm</p>
+																</div>
+															</div>
+															<div class="close-discussion">
+																<i class="mdi mdi-close"></i>
+															</div>
+														</div>
+														<div class="discussion">
+															<div class="editimg_team">
+																<img src="../assets/img/faces/face2.jpg" alt="">
+																<div class="disc__team">
+																	<h5>Discussion Topic 2</h5>
+																	<p>5 Comments · Created by Alex Johnson Wed May 13, 2020 at 9:20 pm</p>
+																</div>
+															</div>
+															<div class="close-discussion">
+																<i class="mdi mdi-close"></i>
+															</div>
+														</div>
+														<div class="discussion">
+															<div class="editimg_team">
+																<img src="../assets/img/faces/face3.jpg" alt="">
+																<div class="disc__team">
+																	<h5>Discussion Topic 3</h5>
+																	<p>2 Comments · Created by Stuart Mark Wed May 13, 2020 at 9:20 pm</p>
+																</div>
+															</div>
+															<div class="close-discussion">
+																<i class="mdi mdi-close"></i>
+															</div>
+														</div>
+														<div class="discussion">
+															<div class="editimg_team">
+																<img src="../assets/img/faces/face1.jpg" alt="">
+																<div class="disc__team">
+																	<h5>Discussion Topic 4</h5>
+																	<p>2 Comments · Created by Eon Morgan Wed May 13, 2020 at 9:20 pm</p>
+																</div>
+															</div>
+															<div class="close-discussion">
+																<i class="mdi mdi-close"></i>
+															</div>
+														</div>
+														<div class="discussion">
+															<div class="editimg_team">
+																<img src="../assets/img/faces/face3.jpg" alt="">
+																<div class="disc__team">
+																	<h5>Discussion Topic 5</h5>
+																	<p>2 Comments · Created by Eon Morgan Wed May 13, 2020 at 9:20 pm</p>
+																</div>
+															</div>
+															<div class="close-discussion">
+																<i class="mdi mdi-close"></i>
+															</div>
+														</div>
+													</div>
+													<div class="discussion--details">
+														<div class="editimg_team">
+															<img src="../assets/img/faces/face3.jpg" alt="">
+															<div class="disc__team">
+																<h5>Discussion Topic 1</h5>
+																<p>2 Comments · Created by Hossam Hammad Wed May 13, 2020 at 9:20 pm</p>
+															</div>
+														</div>
+														<form>
+															<div class="form-group">
+																<textarea rows="4"></textarea>
+															</div>
+															<div class="form-group">
+																<input class="btn btn-primary" type="submit" value="POST">
+															</div>
+														</form>
+														<!-- video -->
+														<div class="updat-dtlgrp">
+															<div class="editimg_team">
+																<img src="../assets/img/faces/face4.jpg" alt="">
+																<div class="video-txt">
+																	<h6>Discussion Topic 1</h6>
+																	<p>Created by Hossam Hammad Wed May 13, 2020 at 9:20 pm</p>
+																	<p><a href="#">Comment</a> · <a href="#">Like</a> Wed May 13, 2020 at 9:20 pm</p>
+																</div>
+															</div>
+														</div>
+													</div>
+                                                </div>
+                                                <div id="album" class="tab-pane fade">
+                                                  <h3>Menu 2</h3>
+                                                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+												</div>
+												<div id="members" class="tab-pane fade">
+													<div class="member--details">
+														<div class="all_teammember">
+															<img src="../assets/img/faces/face1.jpg" alt="">
+															<div class="member_name">
+																<h5>Hossam Hammad <img class="shiedd" src="../assets/img/shield.svg" alt="shield"></h5>
+															</div>
+														</div>
+														<div class="edit--selection">
+															<i class="mdi mdi-settings"></i>
+														</div>
+													</div>
+													<div class="member--details">
+														<div class="all_teammember">
+															<img src="../assets/img/faces/face2.jpg" alt="">
+															<div class="member_name">
+																<h5>Alex Martin</h5>
+															</div>
+														</div>
+														<div class="edit--selection">
+															<i class="mdi mdi-settings"></i>
+														</div>
+													</div>
+													<div class="member--details">
+														<div class="all_teammember">
+															<img src="../assets/img/faces/face3.jpg" alt="">
+															<div class="member_name">
+																<h5>Andrew Symonds</h5>
+															</div>
+														</div>
+														<div class="edit--selection">
+															<i class="mdi mdi-settings"></i>
+														</div>
+													</div>
+													<div class="member--details">
+														<div class="all_teammember">
+															<img src="../assets/img/faces/face4.jpg" alt="">
+															<div class="member_name">
+																<h5>Chris Jordan</h5>
+															</div>
+														</div>
+														<div class="edit--selection">
+															<i class="mdi mdi-settings"></i>
+														</div>
+													</div>
+													<div class="member--details">
+														<div class="all_teammember">
+															<img src="../assets/img/faces/face2.jpg" alt="">
+															<div class="member_name">
+																<h5>Alex Martin</h5>
+															</div>
+														</div>
+														<div class="edit--selection">
+															<i class="mdi mdi-settings"></i>
+														</div>
+													</div>
+													<div class="member--details">
+														<div class="all_teammember">
+															<img src="../assets/img/faces/face3.jpg" alt="">
+															<div class="member_name">
+																<h5>Andrew Symonds</h5>
+															</div>
+														</div>
+														<div class="edit--selection">
+															<i class="mdi mdi-settings"></i>
+														</div>
+													</div>
+												</div>
+												<div id="resources" class="tab-pane fade">
+													<div class="resource--materials">
+														<div class="all--mate">
+															<div class="drop-details">
+																<div class="dropdown primary1">
+																	<a class="dropdown-toggle" href="#" role="button" id="dropdownact" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Add Materials</a>
+																	<div class="dropdown-menu" aria-labelledby="dropdownact">
+																		<a class="dropdown-item" type="button" data-toggle="modal" data-target="#myModal"><i class="mdi mdi-book-open-variant"></i> Add Assignments</a>
+																		<a class="dropdown-item" type="button" data-toggle="modal" data-target="#myquiz"><i class="mdi mdi-comment-question-outline"></i> Add test/Quiz</a>
+																		<a class="dropdown-item" type="button" data-toggle="modal" data-target="#myAssessment"><i class="mdi mdi-file"></i> Add Assesments</a>
+																		<a class="dropdown-item" type="button" data-toggle="modal" data-target="#myFile"><i class="mdi mdi-library-books"></i> Add File/Link/External Tool</a>
+																		<a class="dropdown-item" type="button" data-toggle="modal" data-target="#myDiscussion"><i class="mdi mdi-comment-processing-outline"></i> Add discussion</a>
+																		<a class="dropdown-item" href="#"><i class="mdi mdi-file-document"></i> Add page</a>
+																		<a class="dropdown-item" href="#"><i class="mdi mdi-file-outline"></i> Add media album</a>
+																		<a class="dropdown-item" href="#"><i class="mdi mdi-playlist-plus"></i> Add package</a>
+																		<div class="divider"></div>
+																		<a class="dropdown-item" href="#"><i class="mdi mdi-format-list-checks"></i> Import from resources</a>
+																		<a class="dropdown-item" href="#"><i class="mdi mdi-search-web"></i> find resources</a>
+																	</div>
+																</div>
+																<div class="dropdown primary2">
+																	<a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Options</a>
+																	<div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+																		<a class="dropdown-item" href="#">Action</a>
+																		<a class="dropdown-item" href="#">Another action</a>
+																		<a class="dropdown-item" href="#">Something else here</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+				
+														<div class="mate--details">
+															<div class="editimg">
+																<img src="../assets/img/courses/edit.svg" alt="">
+																<div class="name--mater">
+																	<h5>Material Name 1</h5>
+																	<p>Statics.content.7a.1</p>
+																</div>
+															</div>
+															<div class="edit--selection">
+																<div class="dropdown">
+																	<a class="dropdown-toggle editlink" href="#" role="button" id="editlink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="mdi mdi-settings"></i></a>
+																	<div class="dropdown-menu" aria-labelledby="editlink">
+																		<a class="dropdown-item" href="#"><i class="mdi mdi-pencil"></i> Edit</a>
+																		<a class="dropdown-item" href="#"><i class="mdi mdi-circle-outline"></i> unpublish</a>
+																		<a class="dropdown-item" href="#"><i class="mdi mdi-backup-restore"></i>Move</a>
+																		<a class="dropdown-item" href="#"><i class="mdi mdi-file"></i>Copy to course</a>
+																		<a class="dropdown-item" href="#"><i class="mdi mdi-close-box-outline"></i>Delete</a>
+																		<a class="dropdown-item" href="#"><i class="mdi mdi-file-document"></i>Save to resources</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="mate--details">
+															<div class="editimg">
+																<img src="../assets/img/courses/edit.svg" alt="">
+																<div class="name--mater">
+																	<h5>Material Name 2</h5>
+																	<p>Statics.content.7a.1</p>
+																</div>
+															</div>
+															<div class="edit--selection">
+																<div class="dropdown">
+																	<a class="dropdown-toggle editlink" href="#" role="button" id="editlink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="mdi mdi-settings"></i></a>
+																	<div class="dropdown-menu" aria-labelledby="editlink2">
+																		<a class="dropdown-item" href="#"><i class="mdi mdi-pencil"></i> Edit</a>
+																		<a class="dropdown-item" href="#"><i class="mdi mdi-circle-outline"></i> unpublish</a>
+																		<a class="dropdown-item" href="#"><i class="mdi mdi-backup-restore"></i>Move</a>
+																		<a class="dropdown-item" href="#"><i class="mdi mdi-file"></i>Copy to course</a>
+																		<a class="dropdown-item" href="#"><i class="mdi mdi-close-box-outline"></i>Delete</a>
+																		<a class="dropdown-item" href="#"><i class="mdi mdi-file-document"></i>Save to resources</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="mate--details">
+															<div class="editimg">
+																<img src="../assets/img/courses/edit.svg" alt="">
+																<div class="name--mater">
+																	<h5>Material Name 3</h5>
+																	<p>Statics.content.7a.1</p>
+																</div>
+															</div>
+															<div class="edit--selection">
+																<div class="dropdown">
+																	<a class="dropdown-toggle editlink" href="#" role="button" id="editlink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="mdi mdi-settings"></i></a>
+																	<div class="dropdown-menu" aria-labelledby="editlink3">
+																		<a class="dropdown-item" href="#"><i class="mdi mdi-pencil"></i> Edit</a>
+																		<a class="dropdown-item" href="#"><i class="mdi mdi-circle-outline"></i> unpublish</a>
+																		<a class="dropdown-item" href="#"><i class="mdi mdi-backup-restore"></i>Move</a>
+																		<a class="dropdown-item" href="#"><i class="mdi mdi-file"></i>Copy to course</a>
+																		<a class="dropdown-item" href="#"><i class="mdi mdi-close-box-outline"></i>Delete</a>
+																		<a class="dropdown-item" href="#"><i class="mdi mdi-file-document"></i>Save to resources</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+                                            </div>
+                                        </div>      
+                                    </div>
+                                </div>
+                                <div class="col-md-4 flex-event">
+                                    <div class="material_event">
+                                        <div class="event-header">
+                                            <p><i class="mdi mdi-calendar"></i> Events</p>
+                                            <a href="#">Create</a>
+                                        </div>
+                                        <div class="event-body">
+                                            <p>No upcoming events or assignments</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+					</section>
+                </div>
+			</div>
+		</div>
+
+		<!--========= main section end here ============== -->
+	</div>
+	<!-- page-body-wrapper ends -->
+	</div>
+	<script src="../assets/js/jquery.min.js" type="text/javascript"></script>
+	<script src="../assets/js/popper.min.js" type="text/javascript"></script>
+	<script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="../assets/js/slick.min.js" type="text/javascript"></script>
+	<script src="../assets/js/main.js" type="text/javascript"></script>
+</body>
+
+</html>
